@@ -1,0 +1,130 @@
+:root{
+    --white:#FFF;
+    --green:#03C4A1;
+    --shadow:0px 5px 50px 0px rgba(255, 255, 255, 0.26);
+    --background:linear-gradient(180deg, #150485 0%, #590995 100%);
+    --second-background:linear-gradient(180deg, #590995 0%, #150485 100%);
+}
+
+.form-section{
+    background: var(--second-background);
+    padding: 150px 15px 50px 15px;
+}
+
+.form-section .row{
+    row-gap: 40px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item span{
+    color: var(--green);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.contact-item h2{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.contact-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact-li{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contact-info h3{
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.contact-info h4 a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+}
+
+.input-group{
+    display: flex;
+    gap: 30px;
+}
+
+.input-control{
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    flex-grow: 1;
+}
+
+.input-control::placeholder , textarea::placeholder{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+textarea{
+    width: 100%;
+    height: 142px;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    flex-grow: 1; 
+    resize: vertical;
+}
+
+form .send{
+    max-width: 180px;
+    height: 62px;
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--green);
+    border: 1px solid var(--green);
+    box-shadow: 0px 5px 50px 0px rgba(255, 255, 255, 0.26);
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 21.9px; 
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+
+form .send:hover{
+    background: transparent;
+}

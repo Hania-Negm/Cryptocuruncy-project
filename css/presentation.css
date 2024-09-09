@@ -1,0 +1,97 @@
+.handcoin-section .row{
+    row-gap: 40px;
+}
+
+.handcoin-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.handcoin-info h2{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.handcoin-section .product-ul{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.handcoin-section .product-info{
+    display: flex;
+    gap: 8px;
+}
+
+.handcoin-section .product-info span , .coin-value-li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.handcoin-section .handcoin-info .coin-value-ul , .graph-details .coin-value-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.handcoin-section .product-info , .coin-value-li{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.handcoin-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.handcoin-item p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.handcoin-item a{
+    max-width: 180px;
+}
+
+.bit-coin .row{
+    row-gap: 40px;
+}
+
+.graph-details{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.graph-details span{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.graph-details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.graph-details p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+}

@@ -1,0 +1,232 @@
+@import url('../css/stylesheet.css');
+
+
+:root{
+    --white:#FFF;
+    --green:#03C4A1;
+    --shadow:0px 5px 50px 0px rgba(255, 255, 255, 0.26);
+    --background:linear-gradient(180deg, #150485 0%, #590995 100%);
+    --second-background:linear-gradient(180deg, #590995 0%, #150485 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed' , "system-ui";
+  }
+
+  img , svg{
+    vertical-align: unset;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+/*Header */
+
+
+/* #region HEADER */
+.main-header {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header  .header-ul{
+    display: flex;
+    gap: 30px;
+}
+
+.main-header  .header-li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-header  .header-li:hover a{
+    color: var(--green);
+}
+
+
+.main-header  .header-li:hover svg path{
+    fill: var(--green);
+}
+
+.main-header  .header-li a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-link {
+    display: inline-block;
+    min-width: 180px;
+    height: 62px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.9px; 
+    letter-spacing: 0.18px;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--green);
+    box-shadow: var(--shadow);
+    transition: all linear 0.3s;
+    border: 1px solid var(--green);
+}
+
+.main-link:hover{
+    transform: scale(1);
+    background-color: transparent;
+}
+
+.main-header  .menu{
+    border: 0;
+    outline: none;
+    background: transparent;
+    display: none;
+}
+
+.main-header  .menu svg{
+    height: 48px;
+    width: 48px;
+}
+
+@media (max-width: 845px) {
+    .main-header  nav{
+        display: none;
+    }
+
+    .main-header  .menu{
+        display: block;
+    }
+}
+
+@media (max-width: 534px) {
+    .main-header  .main-link{
+        display: none;
+    }
+}
+
+/* #endregion HEADER */
+
+.coin-value-section{
+    background: var(--background);
+    padding: 100px 15px 50px 15px;
+}
+
+.second-coin-section , .virtual-section{
+    background: var(--second-background);
+    padding: 100px 15px 50px 15px;
+}
+
+.second-coin-section .row{
+    row-gap: 40px;
+}
+
+.coin-value-heading , .virtual-heading , .second-choice-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coin-value-heading span , .virtual-heading span , .second-choice-heading span{
+    color: var(--green);
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.coin-value-heading h2 , .virtual-heading h2 , .second-choice-heading h2{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.coin-value-heading p , .coin-value-li a , .virtual-heading p , .second-choice-heading p{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.coin-value-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.second-coin-section .coin-item{
+    transition: all linear 0.5s;
+    height: 310px;
+    padding: 30px;
+    border-radius: 5px;
+    background: var(--white-bg-25, rgba(255, 255, 255, 0.25));
+    box-shadow: 0px 5px 50px 0px rgba(255, 255, 255, 0.26);
+}
+
+.second-coin-section .coin-item:hover{
+    transform: scale(1.05);
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+
+.graph-section{
+    background: var(--background);
+    padding: 100px 15px 50px 15px;
+}
+
+.graph-section .row{
+    row-gap: 40px;
+}
+
+.graph-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: all linear 0.3s;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.graph-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 5px 50px 0px rgba(255, 255, 255, 0.26);
+}
+
+.graph-item h3{
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
