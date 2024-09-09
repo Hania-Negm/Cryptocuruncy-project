@@ -109,7 +109,7 @@
     width: 48px;
 }
 
-@media (max-width: 845px) {
+@media (max-width: 1124px) {
     .main-header  nav{
         display: none;
     }
