@@ -6,6 +6,134 @@
     --second-background:linear-gradient(180deg, #590995 0%, #150485 100%);
 }
 
+.main-header {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+.header-ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header  #header-ul{
+    display: flex;
+    gap: 30px;
+}
+
+.main-header  .header-li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.main-header  .header-li:hover a{
+    color: var(--green);
+}
+
+
+.main-header  .header-li:hover svg path{
+    fill: var(--green);
+}
+
+.main-header  .header-li a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-link {
+    display: inline-block;
+    min-width: 180px;
+    height: 62px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.9px; 
+    letter-spacing: 0.18px;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--green);
+    box-shadow: var(--shadow);
+    transition: all linear 0.3s;
+    border: 1px solid var(--green);
+}
+
+.main-link:hover{
+    transform: scale(1);
+    background-color: transparent;
+}
+
+.main-header  .button {
+    border: 0;
+    outline: none;
+    background: transparent;
+    display: none;
+}
+
+.main-header  .button svg{
+    height: 48px;
+    width: 48px;
+}
+
+#offcanvasRight{
+    color: var(--white);
+    width: 250px;
+    background: #373737c2;
+}
+
+.btn-close{
+    background-image: none;
+    color:var(--green);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@media (max-width: 1124px) {
+    .main-header  .header-nav, .offcanvas {
+        display: none;
+    }
+
+    .main-header  .button {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .offcanvas {
+        display: block;
+    }
+
+    .main-header  .button{
+        display: block;
+    }
+
+    #offcanvasRight #header-ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 534px) {
+    .main-header  .main-link{
+        display: none;
+    }
+}
+
 .form-section{
     background: var(--second-background);
     padding: 150px 15px 50px 15px;
